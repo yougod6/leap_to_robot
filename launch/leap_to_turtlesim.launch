@@ -1,0 +1,9 @@
+<launch>
+    <!-- leap_motion demo.launch 포함 -->
+    <include file="$(find leap_motion)/launch/demo.launch">
+    </include>
+    <node name="turtlesim_node" pkg="turtlesim"  type="turtlesim_node" output="screen" />
+    <node name="leap_to_turtlesim" pkg="leap_to_robot" type="leap_to_turtlesim" output="screen" />
+
+
+</launch>
